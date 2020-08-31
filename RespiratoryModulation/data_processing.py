@@ -158,7 +158,7 @@ def select_epoch_data( df, ie_trigger_times, epochs, subject_idx ):
         epoch_systole_idx, epoch_diastole_idx = process_ap(epoch_ap )
         epoch_systole_times = epoch_time[epoch_systole_idx]
         epoch_diastole_times = epoch_time[epoch_diastole_idx]        
-        # TODO get epoch_systole_times
+
         epoch_avgbp_times, epoch_avgbp,epoch_pp = get_epoch_avgbp(
             epoch_systole_times, epoch_systole_idx,
             epoch_diastole_times, epoch_diastole_idx,
